@@ -1,0 +1,27 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+header{
+    nav{
+        @include DisplayPosition($justify-content: space-around, $align-items: center);
+        a#logo{
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: $logo-text;
+            font-family: $roboto-font;
+        }
+        ul{
+            @include DisplayPosition($flex-direction: row);
+            list-style-type: none;
+            li{
+                padding: 0rem .5rem;
+                font-family: $roboto-font;
+                a{
+                    text-decoration: none;
+                    color: $dark-text;
+                }
+            }
+        }
+    }
+}

@@ -380,170 +380,37 @@ h6 {
   font-size: 2rem;
 }
 
-body {
-  overflow: hidden;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images0.persgroep.net/rcs/oUHVzCzH_f2GWvYdAuB7kWgQj0w/diocontent/215842957/_fitwidth/1240?appId=93a17a8fd81db0de025c8abd1cca1279&quality=0.9");
-  background-size: cover;
+header nav {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: normal;
+  justify-content: space-around;
   align-items: center;
   align-content: normal;
   align-self: normal;
   flex-wrap: normal;
 }
-body nav {
-  margin: 1rem;
-  height: 4rem;
-  -webkit-backdrop-filter: blur(25px);
-          backdrop-filter: blur(25px);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+header nav a#logo {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(44, 56, 99);
+  font-family: "Roboto", sans-serif;
 }
-body nav ul {
-  padding: 0 40px;
-  margin: 0;
-  height: 100%;
+header nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: normal;
+  align-items: normal;
   align-content: normal;
   align-self: normal;
   flex-wrap: normal;
-}
-body nav ul li {
   list-style-type: none;
 }
-body nav ul li a {
-  color: #ffffff;
+header nav ul li {
+  padding: 0rem 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+header nav ul li a {
   text-decoration: none;
-}
-body nav ul li.navbar__logo img {
-  filter: brightness(150%);
-  height: 3rem;
-  width: 100%;
-}
-body section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-content: normal;
-  align-self: normal;
-  flex-wrap: normal;
-  width: 100%;
-}
-body section div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: normal;
-  align-content: normal;
-  align-self: normal;
-  flex-wrap: normal;
-}
-body section div div.right {
-  display: flex;
-  flex-direction: normal;
-  justify-content: center;
-  align-items: normal;
-  align-content: normal;
-  align-self: normal;
-  flex-wrap: normal;
-  border: 0;
-  padding: 0.5em 1.5em;
-  position: relative;
-  isolation: isolate;
-  margin: 3rem 0rem 1rem 0rem;
-  background: rgb(47, 47, 47);
-  width: 45rem;
-  height: 10rem;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8rem 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8rem 100%);
-}
-body section div img {
-  top: 6.6rem;
-  position: absolute;
-  height: 12rem;
-  right: 25.4rem;
-}
-body section div.intro__bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: normal;
-  align-items: flex-end;
-  align-content: normal;
-  align-self: normal;
-  flex-wrap: normal;
-  margin: 0rem 1rem 0rem 0rem;
-  position: relative;
-}
-body section div.intro__bottom div {
-  position: absolute;
-}
-body section div.intro__bottom div div.triangle {
-  top: -14em;
-  left: -14rem;
-  width: 43rem;
-  height: 30rem;
-  display: flex;
-  flex-direction: normal;
-  justify-content: center;
-  align-items: normal;
-  align-content: normal;
-  align-self: normal;
-  flex-wrap: normal;
-  isolation: isolate;
-  position: relative;
-  background: rgb(47, 47, 47);
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-body section div.intro__bottom div.intro__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: normal;
-  align-items: flex-end;
-  align-content: normal;
-  align-self: normal;
-  flex-wrap: normal;
-}
-body section div.intro__bottom div.intro__text h1 {
-  color: #ffffff;
-  margin: 1rem;
-}
-body section div.intro__bottom div.intro__text p {
-  width: 30%;
-  color: #ffffff;
-}
-
-.triangle::before,
-.triangle::after,
-.right::before,
-.right::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-
-.triangle::before,
-.right::before {
-  background: linear-gradient(to bottom right, rgb(0, 251, 255), rgb(50, 99, 204) 40%, rgb(0, 251, 255));
-  z-index: -2;
-}
-
-.triangle::after {
-  background: rgb(47, 47, 47);
-  z-index: -1;
-  -webkit-clip-path: polygon(50% 1em, calc(0% + 1em) calc(100% - 0.5em), calc(100% - 1em) calc(100% - 0.5em));
-          clip-path: polygon(50% 1em, calc(0% + 1em) calc(100% - 0.5em), calc(100% - 1em) calc(100% - 0.5em));
-}
-
-.right::after {
-  background: rgb(47, 47, 47);
-  z-index: -1;
-  -webkit-clip-path: polygon(calc(1.3% + 0.25em) 0.5em, 100% 0.5em, 100% calc(100% - 0.5em), calc(8rem + 0.25em) calc(100% - 0.5em));
-          clip-path: polygon(calc(1.3% + 0.25em) 0.5em, 100% 0.5em, 100% calc(100% - 0.5em), calc(8rem + 0.25em) calc(100% - 0.5em));
+  color: #000000;
 }
