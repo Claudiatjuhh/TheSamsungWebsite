@@ -1,0 +1,9 @@
+@mixin DisplayPosition($flex-direction: normal, $justify-content:normal, $align-items:normal,$align-content:normal,$align-self:normal,$flex-wrap :normal){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: $align-content;
+    align-self: $align-self;
+    flex-wrap: $flex-wrap;
+}
