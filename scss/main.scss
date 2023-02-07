@@ -2,3 +2,12 @@
 @use 'base';
 @use 'layout/navbar';
 
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+section#intro{
+    position: relative;
+    div.banner-content{
+        @include DisplayPosition();
+    }
+}
